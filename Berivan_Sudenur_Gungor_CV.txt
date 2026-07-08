@@ -1,0 +1,35 @@
+Berivan Sudenur Güngör
+Software Engineer | Python Developer | Cyber Security Enthusiast
+Ankara, Türkiye
+
+Summary
+Newly graduated Software Engineer passionate about Python, cybersecurity, networking, and web technologies. Interested in building practical and secure applications with a strong focus on backend development and system reliability.
+
+Skills
+- Python
+- Java
+- C/C++
+- HTML, CSS, JavaScript
+- Flask
+- PostgreSQL
+- Linux
+- Git & GitHub
+- Networking
+- Cyber Security
+
+Experience
+Labris Networks — Software Intern
+June 2025 – August 2025
+- Python automation tasks
+- Linux and networking studies
+- Cybersecurity-related tasks
+
+Projects
+- CyberPulse — Real-Time IDS/IPS System
+- Symptom Prediction System
+- Hotel Management Database System
+
+Contact
+Email: berivan.sudenur.gungor@gmail.com
+GitHub: github.com/berivan-sudenur
+LinkedIn: linkedin.com/in/berivan-sudenur

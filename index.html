@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sude Güngör — Software Engineer</title>
+  <meta name="description" content="Software Engineer specializing in Python, Cyber Security and Web Development. Based in Ankara, Türkiye.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/navbar.css">
+  <link rel="stylesheet" href="css/hero.css">
+  <link rel="stylesheet" href="css/about.css">
+  <link rel="stylesheet" href="css/skills.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link rel="stylesheet" href="css/experience.css">
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-outline" id="cursorOutline"></div>
+  <div class="noise-overlay"></div>
+  <div class="page-security-layer"></div>
+  <div class="security-grid"></div>
+  <div class="security-icons" aria-hidden="true">
+    <span class="icon-1">🔒</span>
+    <span class="icon-2">🛡️</span>
+    <span class="icon-3">⚡</span>
+    <span class="icon-4">🔍</span>
+  </div>
+  <div class="security-marker marker-1"></div>
+  <div class="security-marker marker-2"></div>
+  <div class="security-marker marker-3"></div>
+  <div class="security-marker marker-4"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+      <a href="#home" class="text-xl font-bold tracking-tight hover-target" style="text-decoration:none;">
+        <span style="color:var(--accent-purple)">P</span>ortfolio<span style="color:var(--accent-cyan)">.</span>
+      </a>
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#home" class="nav-link hover-target" data-i18n="nav.home">Home</a>
+        <a href="#about" class="nav-link hover-target" data-i18n="nav.about">About</a>
+        <a href="#skills" class="nav-link hover-target" data-i18n="nav.skills">Skills</a>
+        <a href="#experience" class="nav-link hover-target" data-i18n="nav.experience">Experience</a>
+        <a href="#projects" class="nav-link hover-target" data-i18n="nav.projects">Projects</a>
+        <a href="#contact" class="nav-link hover-target" data-i18n="nav.contact">Contact</a>
+
+        <button id="languageToggleDesktop" class="language-btn language-toggle hover-target">TR</button>
+
+      </nav>
+      <button style="color:var(--text-primary);background:none;border:none;cursor:pointer;" class="md:hidden" id="mobileMenuBtn">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <button style="position:absolute;top:24px;right:24px;background:none;border:none;color:var(--text-primary);cursor:pointer;" id="closeMenuBtn">
+      <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>
+    </button>
+    <a href="#home" class="mobile-nav-link" data-i18n="nav.home">Home</a>
+    <a href="#about" class="mobile-nav-link" data-i18n="nav.about">About</a>
+    <a href="#skills" class="mobile-nav-link" data-i18n="nav.skills">Skills</a>
+    <a href="#experience" class="mobile-nav-link" data-i18n="nav.experience">Experience</a>
+    <a href="#projects" class="mobile-nav-link" data-i18n="nav.projects">Projects</a>
+    <a href="#contact" class="mobile-nav-link" data-i18n="nav.contact">Contact</a>
+    <button id="languageToggleMobile" class="language-btn language-toggle hover-target">TR</button>
+  </div>
+
+  <main>
+    <section id="home" class="relative min-h-screen flex items-center overflow-hidden pt-24 md:pt-28 xl:pt-32" style="background:var(--primary-bg)">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="hero-security-layer" aria-hidden="true">
+        <div class="hero-badge hero-badge--1"><span class="badge-icon">🛡️</span></div>
+        <div class="hero-badge hero-badge--2"><span class="badge-icon">🔒</span></div>
+        <div class="hero-badge hero-badge--3"><span class="badge-icon">⚡</span></div>
+        <div class="hero-badge hero-badge--4"><span class="badge-icon">🔍</span></div>
+        <div class="hero-badge hero-badge--5"><span class="badge-icon">💾</span></div>
+        <div class="hero-badge hero-badge--6"><span class="badge-icon">⚙️</span></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 w-full relative z-10">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <div class="space-y-8">
+            <div class="space-y-2">
+              <h1 class="hero-title" id="heroTitle" style="color:var(--text-primary)">
+                <span data-i18n="hero.greeting">Hi, I'm</span><br>
+                <span style="background:linear-gradient(90deg,var(--accent-purple),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Sude</span><br>
+                Güngör<span style="color:var(--accent-cyan)">.</span>
+              </h1>
+            </div>
+            <p
+              class="hero-subtitle max-w-lg"
+              id="heroSubtitle"
+              data-i18n="hero.subtitle">
+              Software Engineer specializing in Python, Cyber Security and Web Development.
+            </p>
+            <p
+              class="max-w-md leading-relaxed"
+              style="color:var(--text-muted)"
+              id="heroDesc"
+              data-i18n="hero.description">
+              I’m a newly graduated software engineer focused on backend development, secure systems, and practical solutions that balance performance with reliability.
+            </p>
+            <div class="flex flex-wrap gap-4" id="heroCta">
+              <a href="#projects" class="magnetic-btn hover-target" style="background:var(--accent-purple);color:white;">
+                <span data-i18n="hero.projects">View Projects</span> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+              </a>
+              <a href="Sude_Gungor_CV.pdf" download class="magnetic-btn hover-target" style="border:1px solid rgba(255,255,255,0.1);color:var(--text-primary);">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg> <span data-i18n="hero.resume">Download Resume</span></span>
+              </a>
+            </div>
+          </div>
+          <div class="relative flex justify-center lg:justify-end" id="heroImage">
+            <div class="relative" style="width:320px;height:320px;">
+              <div class="absolute inset-0 rounded-full border animate-pulse" style="border-color:rgba(139,92,246,0.2)"></div>
+              <div class="absolute inset-4 rounded-full border" style="border-color:rgba(6,182,212,0.1)"></div>
+              <div class="absolute inset-8 rounded-full border" style="border-color:rgba(139,92,246,0.1)"></div>
+              <div class="absolute inset-0 rounded-full overflow-hidden p-1" style="background:linear-gradient(135deg,rgba(139,92,246,0.2),rgba(6,182,212,0.2));">
+                <div class="w-full h-full rounded-full flex items-center justify-center overflow-hidden" style="background:var(--secondary-bg)">
+                  <img src="portrait.jpg" alt="Sude Güngör portrait" class="w-full h-full object-cover" style="opacity:0.95">
+                </div>
+              </div>
+              <div class="absolute glass px-4 py-2 rounded-full flex items-center gap-2" style="bottom:-16px;right:-16px;">
+                <div class="w-2 h-2 rounded-full bg-green-400 animate-pulse"></div>
+                <span class="text-xs font-medium" style="color:var(--text-secondary)" data-i18n="hero.available">Available for work</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <span class="text-xs uppercase tracking-widest" style="color:var(--text-muted)" data-i18n="hero.scroll">Scroll</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--text-muted)"><path d="m6 9 6 6 6-6"/></svg>
+      </div>
+    </section>
+
+    <section id="about" class="py-32 relative" style="background:var(--primary-bg)">
+      <div class="section-security-layer" aria-hidden="true">
+        <div class="section-spot section-spot--1"></div>
+        <div class="section-spot section-spot--2"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+          <div class="space-y-6 fade-up">
+            <p class="font-medium tracking-wide text-sm uppercase" style="color:var(--accent-cyan)" data-i18n="about.label">About Me</p>
+            <h2 class="section-heading" style="color:var(--text-primary)">
+              <span data-i18n="about.heading.prefix">Building the future with</span> <span style="background:linear-gradient(90deg,var(--accent-purple),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;" data-i18n="about.heading.highlight">code &amp; security</span>
+            </h2>
+          </div>
+          <div class="space-y-6 fade-up">
+            <p class="text-lg leading-relaxed" style="color:var(--text-secondary)" data-i18n="about.description1">I am a newly graduated Software Engineer passionate about Python, cybersecurity, networking, and web technologies. I enjoy building practical solutions, learning new technologies, and creating secure and user-friendly applications.</p>
+            <p class="leading-relaxed" style="color:var(--text-muted)" data-i18n="about.description2">Currently focusing on backend development and cybersecurity, I am driven by the challenge of protecting digital assets while delivering seamless user experiences. My approach combines technical precision with creative problem-solving.</p>
+            <div class="flex flex-wrap gap-3 pt-4">
+              <span class="tech-tag" data-i18n="about.tag.problem">Problem Solver</span>
+              <span class="tech-tag" data-i18n="about.tag.learner">Continuous Learner</span>
+              <span class="tech-tag" data-i18n="about.tag.security">Security First</span>
+              <span class="tech-tag" data-i18n="about.tag.detail">Detail Oriented</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="py-32 relative" style="background:var(--primary-bg)">
+      <div class="section-security-layer" aria-hidden="true">
+        <div class="section-spot section-spot--3"></div>
+        <div class="section-spot section-spot--4"></div>
+      </div>
+      <div class="section-decor" aria-hidden="true">
+        <div class="section-icon-card section-icon-card--a"><span>🔰</span></div>
+        <div class="section-icon-card section-icon-card--b"><span>🛡️</span></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20 fade-up">
+          <p class="font-medium tracking-wide text-sm uppercase mb-4" style="color:var(--accent-cyan)" data-i18n="skills.label">My Expertise</p>
+          <h2 class="section-heading" style="color:var(--text-primary)"><span data-i18n="skills.heading.prefix">Technical</span> <span style="background:linear-gradient(90deg,var(--accent-purple),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;" data-i18n="skills.heading.highlight">Skills</span></h2>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="skill-card hover-target fade-up">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(139,92,246,0.1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-purple)"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3 class="font-semibold" style="color:var(--text-primary)" data-i18n="skills.python.title">Python</h3>
+            </div>
+            <p class="text-sm" style="color:var(--text-muted)" data-i18n="skills.python.desc">Primary language for backend &amp; automation</p>
+          </div>
+          <div class="skill-card hover-target fade-up">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(6,182,212,0.1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-cyan)"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              <h3 class="font-semibold" style="color:var(--text-primary)" data-i18n="skills.html.title">HTML</h3>
+            </div>
+            <p class="text-sm" style="color:var(--text-muted)" data-i18n="skills.html.desc">Basic level, focused on clean structure</p>
+          </div>
+          <div class="skill-card hover-target fade-up">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(139,92,246,0.1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-purple)"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><path d="M15 2v2"/><path d="M15 20v2"/><path d="M2 15h2"/><path d="M2 9h2"/><path d="M20 15h2"/><path d="M20 9h2"/><path d="M9 2v2"/><path d="M9 20v2"/></svg>
+              </div>
+              <h3 class="font-semibold" style="color:var(--text-primary)" data-i18n="skills.cpp.title">C / C++</h3>
+            </div>
+            <p class="text-sm" style="color:var(--text-muted)" data-i18n="skills.cpp.desc">Systems programming &amp; performance</p>
+          </div>
+          <div class="skill-card hover-target fade-up">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(6,182,212,0.1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-cyan)"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+              </div>
+              <h3 class="font-semibold" style="color:var(--text-primary)" data-i18n="skills.html.title">HTML</h3>
+            </div>
+            <p class="text-sm" style="color:var(--text-muted)" data-i18n="skills.html.desc">Basic level, focused on clean structure</p>
+          </div>
+          <div class="skill-card hover-target fade-up">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(139,92,246,0.1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-purple)"><circle cx="13.5" cy="6.5" r=".5" fill="currentColor"/><circle cx="17.5" cy="10.5" r=".5" fill="currentColor"/><circle cx="8.5" cy="7.5" r=".5" fill="currentColor"/><circle cx="6.5" cy="12.5" r=".5" fill="currentColor"/><path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/></svg>
+              </div>
+              <h3 class="font-semibold" style="color:var(--text-primary)" data-i18n="skills.css.title">CSS</h3>
+            </div>
+            <p class="text-sm" style="color:var(--text-muted)" data-i18n="skills.css.desc">Basic level, learning responsive visual design</p>
+          </div>
+          <div class="skill-card hover-target fade-up">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(6,182,212,0.1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-cyan)"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+              </div>
+              <h3 class="font-semibold" style="color:var(--text-primary)" data-i18n="skills.js.title">JavaScript</h3>
+            </div>
+            <p class="text-sm" style="color:var(--text-muted)" data-i18n="skills.js.desc">Basic level, building simple interactive features</p>
+          </div>
+          <div class="skill-card hover-target fade-up">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(139,92,246,0.1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-purple)"><path d="M10 2v7.31"/><path d="M14 9.3V1.99"/><path d="M8.5 2h7"/><path d="M14 9.3a6.5 6.5 0 1 1-4 0"/><path d="M5.52 16h12.96"/></svg>
+              </div>
+              <h3 class="font-semibold" style="color:var(--text-primary)" data-i18n="skills.flask.title">Flask</h3>
+            </div>
+            <p class="text-sm" style="color:var(--text-muted)" data-i18n="skills.flask.desc">Basic level, developing small web apps</p>
+          </div>
+          <div class="skill-card hover-target fade-up">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(6,182,212,0.1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-cyan)"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5V19A9 3 0 0 0 21 19V5"/><path d="M3 12A9 3 0 0 0 21 12"/></svg>
+              </div>
+              <h3 class="font-semibold" style="color:var(--text-primary)" data-i18n="skills.postgresql.title">PostgreSQL</h3>
+            </div>
+            <p class="text-sm" style="color:var(--text-muted)" data-i18n="skills.postgresql.desc">Basic level, working with simple database structures</p>
+          </div>
+          <div class="skill-card hover-target fade-up">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(139,92,246,0.1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-purple)"><polyline points="4 17 10 11 4 5"/><line x1="12" x2="20" y1="19" y2="19"/></svg>
+              </div>
+              <h3 class="font-semibold" style="color:var(--text-primary)" data-i18n="skills.linux.title">Linux</h3>
+            </div>
+            <p class="text-sm" style="color:var(--text-muted)" data-i18n="skills.linux.desc">System administration &amp; scripting</p>
+          </div>
+          <div class="skill-card hover-target fade-up">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(6,182,212,0.1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-cyan)"><line x1="6" x2="6" y1="3" y2="15"/><circle cx="18" cy="6" r="3"/><circle cx="6" cy="18" r="3"/><path d="M18 9a9 9 0 0 1-9 9"/></svg>
+              </div>
+              <h3 class="font-semibold" style="color:var(--text-primary)" data-i18n="skills.git.title">Git &amp; GitHub</h3>
+            </div>
+            <p class="text-sm" style="color:var(--text-muted)" data-i18n="skills.git.desc">Version control &amp; collaboration</p>
+          </div>
+          <div class="skill-card hover-target fade-up">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(139,92,246,0.1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-purple)"><rect x="16" y="16" width="6" height="6" rx="1"/><rect x="2" y="16" width="6" height="6" rx="1"/><rect x="9" y="2" width="6" height="6" rx="1"/><path d="M5 16v-3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v3"/><path d="M12 12V8"/></svg>
+              </div>
+              <h3 class="font-semibold" style="color:var(--text-primary)" data-i18n="skills.networking.title">Networking</h3>
+            </div>
+            <p class="text-sm" style="color:var(--text-muted)" data-i18n="skills.networking.desc">Protocols, architecture &amp; security</p>
+          </div>
+          <div class="skill-card hover-target fade-up">
+            <div class="flex items-center gap-3 mb-3">
+              <div class="w-10 h-10 rounded-lg flex items-center justify-center" style="background:rgba(6,182,212,0.1)">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--accent-cyan)"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <h3 class="font-semibold" style="color:var(--text-primary)" data-i18n="skills.cyber.title">Cyber Security</h3>
+            </div>
+            <p class="text-sm" style="color:var(--text-muted)" data-i18n="skills.cyber.desc">Basic level, learning threat detection and prevention</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="py-32 relative" style="background:linear-gradient(180deg,var(--secondary-bg),var(--primary-bg));">
+      <div class="section-security-layer" aria-hidden="true">
+        <div class="section-spot section-spot--1"></div>
+        <div class="section-spot section-spot--2"></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="mb-16 fade-up">
+          <p class="font-medium tracking-wide text-sm uppercase mb-4" style="color:var(--accent-cyan)" data-i18n="experience.label">Experience</p>
+          <h2 class="section-heading" style="color:var(--text-primary)"><span data-i18n="experience.heading.prefix">A focused path in</span> <span style="background:linear-gradient(90deg,var(--accent-purple),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;" data-i18n="experience.heading.highlight">software &amp; security</span></h2>
+        </div>
+        <div class="glass-card rounded-3xl p-8 md:p-10 fade-up">
+          <div class="relative pl-10">
+            <div class="timeline-line"></div>
+            <div class="relative mb-10">
+              <div class="absolute left-0 top-2 flex items-center justify-center">
+                <div class="timeline-dot"></div>
+              </div>
+              <div class="pl-8">
+                <p class="text-sm uppercase tracking-[0.3em] mb-2" style="color:var(--accent-cyan)" data-i18n="experience.date">June 2025 – August 2025</p>
+                <h3 class="text-2xl font-semibold mb-2" style="color:var(--text-primary)" data-i18n="experience.company">Labris Networks</h3>
+                <p class="text-lg mb-4" style="color:var(--text-secondary)" data-i18n="experience.role">Software Intern</p>
+                <ul class="space-y-2 text-sm leading-relaxed" style="color:var(--text-muted)">
+                  <li data-i18n="experience.item1">• Assisted with Python automation tasks and scripting workflows.</li>
+                  <li data-i18n="experience.item2">• Strengthened Linux and networking knowledge through practical study.</li>
+                  <li data-i18n="experience.item3">• Contributed to cybersecurity-related tasks and security-minded development practices.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="py-32 relative" style="background:var(--primary-bg)">
+      <div class="section-security-layer" aria-hidden="true">
+        <div class="section-glow section-glow--a"></div>
+        <div class="section-icon-card section-icon-card--a"><span>🔒</span></div>
+        <div class="section-spot section-spot--3"></div>
+        <div class="section-icon-card section-icon-card--b"><span>🛡️</span></div>
+        <div class="section-spot section-spot--4"></div>
+        <div class="section-glow section-glow--b"></div>
+      </div>
+      <div class="section-decor" aria-hidden="true">
+        <div class="section-icon-card section-icon-card--top-left"><span>🚀</span></div>
+        <div class="section-icon-card section-icon-card--bottom-right"><span>💾</span></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="text-center mb-16 fade-up">
+          <p class="font-medium tracking-wide text-sm uppercase mb-4" style="color:var(--accent-cyan)" data-i18n="projects.label">Selected Work</p>
+          <h2 class="section-heading" style="color:var(--text-primary)"><span data-i18n="projects.heading.prefix">My</span> <span style="background:linear-gradient(90deg,var(--accent-purple),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;" data-i18n="projects.heading.highlight">Projects</span></h2>
+        </div>
+        <div class="grid lg:grid-cols-3 gap-8">
+          <article class="project-card fade-up">
+            <div class="project-image">
+              <img src="cyberpulse.jpg" alt="CyberPulse dashboard concept">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="p-7 space-y-5">
+              <div class="space-y-2">
+                <h3 class="text-xl font-semibold" style="color:var(--text-primary)" data-i18n="project.cyberpulse.title">CyberPulse — Real-Time IDS/IPS System</h3>
+                <p class="text-sm leading-relaxed" style="color:var(--text-muted)" data-i18n="project.cyberpulse.desc">A real-time intrusion detection and prevention system that detects port scan, SQL injection, XSS, and brute-force attacks while automatically blocking malicious IPs.</p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Flask</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Scapy</span>
+              </div>
+              <div class="flex flex-wrap gap-3 pt-2">
+                <a href="https://github.com/sudenurgungor/CyberPulse" class="magnetic-btn hover-target" style="padding:10px 18px;background:rgba(139,92,246,0.12);color:var(--text-primary);border:1px solid rgba(139,92,246,0.15);">
+                  <span data-i18n="project.github">GitHub</span>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-up">
+            <div class="project-image">
+              <img src="symptom.jpg" alt="Machine learning prediction interface">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="p-7 space-y-5">
+              <div class="space-y-2">
+                <h3 class="text-xl font-semibold" style="color:var(--text-primary)" data-i18n="project.symptom.title">Symptom Prediction System</h3>
+                <p class="text-sm leading-relaxed" style="color:var(--text-muted)" data-i18n="project.symptom.desc">A machine learning-driven solution that predicts symptoms based on structured health data and supports clearer early-stage insights.</p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Machine Learning</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card fade-up">
+            <div class="project-image">
+              <img src="hotel.jpg" alt="Hotel management database illustration">
+              <div class="project-overlay"></div>
+            </div>
+            <div class="p-7 space-y-5">
+              <div class="space-y-2">
+                <h3 class="text-xl font-semibold" style="color:var(--text-primary)" data-i18n="project.hotel.title">Hotel Management Database System</h3>
+                <p class="text-sm leading-relaxed" style="color:var(--text-muted)" data-i18n="project.hotel.desc">A structured database solution for managing bookings, room data, and related operations with clean relational design.</p>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">SQL</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="py-32 relative" style="background:linear-gradient(180deg,var(--primary-bg),var(--secondary-bg));">
+      <div class="section-security-layer" aria-hidden="true">
+        <div class="section-glow section-glow--c"></div>
+        <div class="section-spot section-spot--5"></div>
+        <div class="section-spot section-spot--6"></div>
+        <div class="section-glow section-glow--d"></div>
+      </div>
+      <div class="section-decor" aria-hidden="true">
+        <div class="section-icon-card section-icon-card--top-left"><span>🔒</span></div>
+        <div class="section-icon-card section-icon-card--top-right"><span>🛡️</span></div>
+        <div class="section-icon-card section-icon-card--bottom-left"><span>📡</span></div>
+      </div>
+      <div class="max-w-7xl mx-auto px-6 relative z-10">
+        <div class="glass-card rounded-[32px] p-8 md:p-12 space-y-8 fade-up">
+          <div class="space-y-4">
+            <p class="font-medium tracking-wide text-sm uppercase" style="color:var(--accent-cyan)" data-i18n="contact.label">Contact</p>
+            <h2 class="section-heading" style="color:var(--text-primary)"><span data-i18n="contact.heading.prefix">Let’s build something</span> <span style="background:linear-gradient(90deg,var(--accent-purple),var(--accent-cyan));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;" data-i18n="contact.heading.highlight">secure &amp; meaningful</span>.</h2>
+          </div>
+          <div class="grid md:grid-cols-2 gap-4">
+            <a href="mailto:sude06-148@hotmail.com" class="contact-link hover-target">
+              <span class="text-sm font-medium" style="color:var(--text-primary)" data-i18n="contact.email">Email</span>
+              <span class="text-sm" style="color:var(--text-secondary)">sude06-148@hotmail.com</span>
+            </a>
+            <a href="https://www.linkedin.com/in/sude-güngör-02212437b" class="contact-link hover-target">
+              <span class="text-sm font-medium" style="color:var(--text-primary)" data-i18n="contact.linkedin">LinkedIn</span>
+              <span class="text-sm" style="color:var(--text-secondary)">linkedin.com/in/sude-güngör-02212437b</span>
+            </a>
+            <a href="https://github.com/sudenurgungor" class="contact-link hover-target">
+              <span class="text-sm font-medium" style="color:var(--text-primary)" data-i18n="contact.github">GitHub</span>
+              <span class="text-sm" style="color:var(--text-secondary)">github.com/sudenurgungor</span>
+            </a>
+            <div class="contact-link">
+              <span class="text-sm font-medium" style="color:var(--text-primary)" data-i18n="contact.location">Location</span>
+              <span class="text-sm" style="color:var(--text-secondary)">Ankara, Türkiye</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-8 px-6 border-t" style="border-color:rgba(255,255,255,0.06);background:var(--secondary-bg)">
+    <div class="max-w-7xl mx-auto text-center text-sm" style="color:var(--text-muted)">
+      <span data-i18n="footer.text">Designed and developed by Sude Güngör.</span>
+    </div>
+  </footer>
+
+  <script src="js/navbar.js"></script>
+  <script src="js/mobile-menu.js"></script>
+  <script src="js/scroll.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/language.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 1400px) {
+
+  #skills .section-security-layer .section-spot--3,
+  #skills .section-security-layer .section-spot--4,
+  #skills .section-decor .section-icon-card {
+    display: none;
+  }
+}
+
+@media (max-width: 1280px) {
+
+  #projects .section-decor .section-icon-card,
+  #contact .section-decor .section-icon-card {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .section-badge {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .cursor-dot,
+  .cursor-outline {
+    display: none;
+  }
+
+  body {
+    cursor: auto;
+  }
+}

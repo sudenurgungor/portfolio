@@ -1,0 +1,26 @@
+/* ==========================
+   EXPERIENCE SECTION
+========================== */
+
+.timeline-line{
+  position:absolute;
+  left:24px;
+  top:0;
+  bottom:0;
+  width:1px;
+  background:linear-gradient(to bottom,var(--accent-purple),var(--accent-cyan));
+}
+
+.timeline-dot{
+  width:12px;
+  height:12px;
+  border-radius:50%;
+  background:var(--accent-purple);
+  border:3px solid var(--primary-bg);
+  box-shadow:0 0 0 2px var(--accent-purple);
+}
+
+#experience>.max-w-7xl{
+  position:relative;
+  z-index:10;
+}

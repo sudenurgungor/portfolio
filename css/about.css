@@ -1,0 +1,50 @@
+/* ==========================
+   ABOUT SECTION
+========================== */
+
+#about {
+    position: relative;
+    overflow: hidden;
+}
+
+#about .max-w-7xl {
+    position: relative;
+    z-index: 2;
+}
+
+#about .section-security-layer {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 1;
+}
+
+#about .section-spot--1 {
+    top: 14%;
+    left: 6%;
+    transform: rotate(-12deg);
+}
+
+#about .section-spot--2 {
+    top: 22%;
+    right: 10%;
+    transform: rotate(6deg);
+}
+
+#about .tech-tag {
+    transition: .3s;
+}
+
+#about .tech-tag:hover {
+    transform: translateY(-3px);
+}
+
+#about p {
+    position: relative;
+    z-index: 2;
+}
+
+#about h2 {
+    position: relative;
+    z-index: 2;
+}

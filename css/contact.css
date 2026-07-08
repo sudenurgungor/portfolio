@@ -1,0 +1,52 @@
+/* ==========================
+   CONTACT SECTION
+========================== */
+
+.contact-link{
+  position:relative;
+  display:inline-flex;
+  align-items:center;
+  gap:12px;
+  padding:16px 24px;
+  border-radius:12px;
+  background:rgba(17,24,39,.4);
+  border:1px solid rgba(255,255,255,.05);
+  transition:all .3s ease;
+  text-decoration:none;
+  width:100%;
+}
+
+.contact-link:hover{
+  background:rgba(17,24,39,.6);
+  border-color:rgba(139,92,246,.3);
+  transform:translateX(8px);
+}
+
+/* Contact decorative icons */
+
+#contact>.max-w-7xl{
+  position:relative;
+  z-index:10;
+}
+
+#contact .section-decor .section-icon-card--top-left{
+  left:18%;
+  top:12%;
+  transform:rotate(-12deg);
+}
+
+#contact .section-decor .section-icon-card--top-right{
+  right:18%;
+  top:12%;
+  transform:rotate(12deg);
+}
+
+#contact .section-decor .section-icon-card{
+  pointer-events:none;
+}
+
+@media (max-width:1280px){
+  #contact .section-decor .section-icon-card{
+    display:none;
+  }
+}
