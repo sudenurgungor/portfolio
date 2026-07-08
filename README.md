@@ -46,7 +46,7 @@ portfolio/
 
 ## 📸 Preview
 
-> Add a screenshot of your portfolio here.
+![Portfolio Preview](preview.png)
 
 ---
 
