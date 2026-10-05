@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
     // Sayfa en üstten açılsın
     window.scrollTo({
         top: 0,
-        behavior: "instant"
+        behavior: "auto"
     });
 
     // Sayfa tamamen yüklendikten sonra görünür hale getir
